@@ -417,6 +417,8 @@ if(BUILD_DAEMON OR BUILD_GUI OR BUILD_CLI OR BUILD_TESTS OR BUILD_BENCH OR BUILD
   find_package(Libevent 2.1.8 MODULE REQUIRED)
 endif()
 
+find_package(QuickJS REQUIRED)
+
 include(cmake/introspection.cmake)
 
 include(cmake/ccache.cmake)
